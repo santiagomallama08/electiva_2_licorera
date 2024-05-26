@@ -1,243 +1,279 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Electiva2 - Licores Nariño</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<head>
+  <title>Electiva2 - Licores Nariño</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Inline CSS -->
-    <style>
-      body {
-        font-family: 'Spectral', serif;
-        margin: 0;
-        padding: 0;
-      }
-      .navbar {
-        background-color: #343a40;
-      }
-      .navbar-brand {
-        font-size: 1.5rem;
-        color: #fff;
-      }
-      .navbar-nav .nav-item .nav-link {
-        color: #fff;
-      }
-      .hero-wrap {
-        background: url('path-to-your-background-image.jpg') no-repeat center center;
-        background-size: cover;
-        height: 100vh;
-        position: relative;
-      }
-      .hero-wrap .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-      }
-      .hero-wrap .text {
-        color: #fff;
-        text-align: center;
-        padding: 0 15px;
-      }
-      .btn-primary {
-        background-color: #007bff;
-        border: none;
-        color: #fff;
-      }
-      .btn-outline-white {
-        border: 1px solid #fff;
-        color: #fff;
-      }
-      .ftco-intro .icon {
-        font-size: 3rem;
-        color: #007bff;
-      }
-      .ftco-intro .text {
-        margin-left: 15px;
-      }
-      .ftco-section .product {
-        border: 1px solid #eaeaea;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-      }
-      .ftco-section .product .img-prod img {
-        border-radius: 10px;
-      }
-      .ftco-footer {
-        background-color: #343a40;
-        color: #fff;
-        padding: 40px 0;
-      }
-      .ftco-footer .ftco-footer-widget {
-        margin-bottom: 30px;
-      }
-      .ftco-footer .ftco-footer-widget h2 {
-        font-size: 1.5rem;
-      }
-      .ftco-footer .ftco-footer-widget .list-unstyled {
-        padding: 0;
-        list-style: none;
-      }
-      .ftco-footer .ftco-footer-widget .list-unstyled li a {
-        color: #fff;
-      }
-      .ftco-footer .ftco-footer-widget .block-23 ul {
-        padding: 0;
-        list-style: none;
-      }
-      .ftco-footer .ftco-footer-widget .block-23 ul li {
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-      }
-      .ftco-footer .ftco-footer-widget .block-23 ul li .icon {
-        margin-right: 10px;
-      }
-    </style>
-    
-  </head>
-  <body>
+  <!-- Inline CSS -->
+  <style>
+    body {
+      font-family: 'Spectral', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .navbar-nav .nav-item .nav-link {
+      color: #fff;
+    }
+    .hero-wrap {
+      background: url('path-to-your-background-image.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+    }
+    .hero-wrap .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero-wrap .text {
+      color: #fff;
+      text-align: center;
+      padding: 0 15px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+    }
+    .btn-outline-white {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+    .ftco-intro .icon {
+      font-size: 3rem;
+      color: #007bff;
+    }
+    .ftco-intro .text {
+      margin-left: 15px;
+    }
+    .ftco-section .product {
+      border: 1px solid #eaeaea;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .ftco-section .product .img-prod img {
+      border-radius: 10px;
+    }
+    .ftco-footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .ftco-footer .ftco-footer-widget {
+      margin-bottom: 30px;
+    }
+    .ftco-footer .ftco-footer-widget h2 {
+      font-size: 1.5rem;
+    }
+    .ftco-footer .ftco-footer-widget .list-unstyled {
+      padding: 0;
+      list-style: none;
+    }
+    .ftco-footer .ftco-footer-widget .list-unstyled li a {
+      color: #fff;
+    }
+    .ftco-footer .ftco-footer-widget .block-23 ul {
+      padding: 0;
+      list-style: none;
+    }
+    .ftco-footer .ftco-footer-widget .block-23 ul li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .ftco-footer .ftco-footer-widget .block-23 ul li .icon {
+      margin-right: 10px;
+    }
+    .hero-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
 
-    <div class="wrap">
-      <div class="container">
-        <div class="flex">
-          <div class="col-md-6 d-flex align-items-center">
-            <p class="mb-0 phone pl-md-2">
+.hero-wrap .text {
+  text-align: center;
+}
+
+.ftco-intro .intro, .ftco-section .product, .ftco-footer-widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+  </style>
+  
+</head>
+<body>
+
+  <div class="wrap ">
+    <div class="container flex-display">
+      <div class="flex">
+        <div class="col-md-6 d-flex align-items-center">
+          <p class="mb-0 phone pl-md-2">
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-md-end">
+          <div class="social-media mr-4">
+            <p class="mb-0 d-flex">
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
             </p>
           </div>
-          <div class="col-md-6 d-flex justify-content-md-end">
-            <div class="social-media mr-4">
-              <p class="mb-0 d-flex">
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+          <div class="reg">
+            <p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Licores <span>Nariño</span></a>
+      <div class="order-lg-last btn-group">
+        <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="flaticon-shopping-bag"></span>
+          <div class="d-flex justify-content-center align-items-center"><small>3</small></div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-item d-flex align-items-start" href="#">
+            <div class="img" style="background-image: url('images/prod-1.jpg');"></div>
+
+            <div class="text pl-3">
+              <h4>Bacardi 151</h4>  
+              <p class="mb-0"><a href="#" class="price">$25.990</a><span class="quantity ml-3">Cantidad: 01</span></p>
+            </div>
+          </div>
+          <div class="dropdown-item d-flex align-items-start" href="#">
+            <div class="img" style="background-image: url( 'images/prod-2.jpg');"></div>
+            <div class="text pl-3">
+              <h4>Jim Beam Kentucky Straight</h4>
+              <p class="mb-0"><a href="#" class="price">$30.890</a><span class="quantity ml-3">Cantidad: 02</span></p>
+            </div>
+          </div>
+          <div class="dropdown-item d-flex align-items-start" href="#">
+            <div class="img" style="background-image: url('images/prod-3.jpg');"></div>
+            <div class="text pl-3">
+              <h4>Citadelle</h4>
+              <p class="mb-0"><a href="#" class="price">$22.500</a><span class="quantity ml-3">Cantidad: 01</span></p>
+            </div>
+          </div>
+          <a class="dropdown-item text-center btn-link d-block w-100" href="cart.html">
+            View All
+            <span class="ion-ios-arrow-round-forward"></span>
+          </a>
+        </div>
+      </div>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+  
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <a class="dropdown-item" href="product.html">Products</a>
+              <a class="dropdown-item" href="product-single.html">Single Product</a>
+              <a class="dropdown-item" href="cart.html">Cart</a>
+              <a class="dropdown-item" href="checkout.html">Checkout</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-wrap">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center">
+        <div class="col-md-8 ftco-animate d-flex align-items-end">
+          <div class="text w-100 text-center mb-5">
+            <h1 class="mb-4">Exquisita Colección de Licores Artesanales de Nariño</h1>
+            <p><a href="#" class="btn btn-primary py-2 px-4">Compra Ahora</a> <a href="#" class="btn btn-outline-white py-2 px-4">Ver Productos</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="ftco-section ftco-intro">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <div class="intro">
+            <div class="icon"><span class="icon-truck"></span></div>
+            <div class="text">
+              <h2>Entrega Gratis</h2>
+              <p>En compras superiores a $50.000, disfrute de nuestro servicio de entrega gratuito en cualquier parte del país.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-3 pb-3">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h2 class="mb-4">Nuestros Productos</h2>
+          <p>Explora nuestra colección de licores artesanales.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="product">
+            <a href="#" class="img-prod"><img class="img-fluid" src="https://images.unsplash.com/photo-1561150169-371f366b828a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  height="200" alt="Product"></a>
+            <div class="text py-3 px-3">
+              <h3><a href="#">Bacardi 151</a></h3>
+              <div class="d-flex">
+                <div class="pricing">
+                  <p class="price"><span>$25.990</span></p>
+                </div>
+              </div>
+              <hr>
+              <p class="bottom-area d-flex">
+                <a href="#" class="add-to-cart"><span>Añadir al carrito <i class="ion-ios-add ml-1"></i></span></a>
               </p>
             </div>
-            <div class="reg">
-              <p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
-            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Licores <span>Nariño</span></a>
-        <div class="order-lg-last btn-group">
-          <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="flaticon-shopping-bag"></span>
-            <div class="d-flex justify-content-center align-items-center"><small>3</small></div>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <div class="dropdown-item d-flex align-items-start" href="#">
-              <div class="img" style="background-image: url('{% static 'images/prod-1.jpg' %}');"></div>
-
-              <div class="text pl-3">
-                <h4>Bacardi 151</h4>  
-                <p class="mb-0"><a href="#" class="price">$25.990</a><span class="quantity ml-3">Cantidad: 01</span></p>
-              </div>
-            </div>
-            <div class="dropdown-item d-flex align-items-start" href="#">
-              <div class="img" style="background-image: url({% static 'images/prod-2.jpg' %});"></div>
-              <div class="text pl-3">
-                <h4>Jim Beam Kentucky Straight</h4>
-                <p class="mb-0"><a href="#" class="price">$30.890</a><span class="quantity ml-3">Cantidad: 02</span></p>
-              </div>
-            </div>
-            <div class="dropdown-item d-flex align-items-start" href="#">
-              <div class="img" style="background-image: url({% static 'images/prod-3.jpg' %});"></div>
-              <div class="text pl-3">
-                <h4>Citadelle</h4>
-                <p class="mb-0"><a href="#" class="price">$22.500</a><span class="quantity ml-3">Cantidad: 01</span></p>
-              </div>
-            </div>
-            <a class="dropdown-item text-center btn-link d-block w-100" href="cart.html">
-              View All
-              <span class="ion-ios-arrow-round-forward"></span>
-            </a>
-          </div>
-        </div>
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-    
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="product.html">Products</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
-                <a class="dropdown-item" href="cart.html">Cart</a>
-                <a class="dropdown-item" href="checkout.html">Checkout</a>
-              </div>
-            </li>
-            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="hero-wrap">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-8 ftco-animate d-flex align-items-end">
-            <div class="text w-100 text-center mb-5">
-              <h1 class="mb-4">Exquisita Colección de Licores Artesanales de Nariño</h1>
-              <p><a href="#" class="btn btn-primary py-2 px-4">Compra Ahora</a> <a href="#" class="btn btn-outline-white py-2 px-4">Ver Productos</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="ftco-section ftco-intro">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <div class="intro">
-              <div class="icon"><span class="icon-truck"></span></div>
-              <div class="text">
-                <h2>Entrega Gratis</h2>
-                <p>En compras superiores a $50.000, disfrute de nuestro servicio de entrega gratuito en cualquier parte del país.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-3 pb-3">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Nuestros Productos</h2>
-            <p>Explora nuestra colección de licores artesanales.</p>
-          </div>
-        </div>
-        <div class="row">
+        <div class="flex">
           <div class="col-md-6 col-lg-3 ftco-animate">
             <div class="product">
-              <a href="#" class="img-prod"><img class="img-fluid" src="{% static 'images/prod-1.jpg' %}" alt="Product"></a>
+              <a href="#" class="img-prod"><img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zbkxZtqhQMi-YJ68oHnhoPGr6GmqWUaPadqCV3529REyYtrO03XqGG_GeqMY957z9hI&usqp=CAU" alt="Product"></a>
               <div class="text py-3 px-3">
-                <h3><a href="#">Bacardi 151</a></h3>
+                <h3><a href="#">Aguardiente Nariño</a></h3>
                 <div class="d-flex">
                   <div class="pricing">
-                    <p class="price"><span>$25.990</span></p>
+                    <p class="price"><span>$40.000 $</span></p>
                   </div>
                 </div>
                 <hr>
@@ -247,50 +283,63 @@
               </div>
             </div>
           </div>
-          <!-- Repeat for other products -->
+       
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">Licores Nariño</h2>
+            <p>Nos especializamos en licores artesanales únicos, elaborados con los mejores ingredientes locales.</p>
+            <ul class="ftco-footer-social list-unstyled">
+              <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget ml-md-4">
+            <h2 class="ftco-heading-2">Menú</h2>
+            <ul class="list-unstyled">
+              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Inicio</a></li>
+              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Acerca de</a></li>
+              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Productos</a></li>
+              <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">¿Alguna Pregunta?</h2>
+            <div class="block-23">
+              <ul>
+                <li><span class="icon fa fa-map-marker"></span><span class="text">Calle 123, Ciudad, País</span></li>
+                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+57 123 456 7890</span></a></li>
+                <li><a href="#"><span class="icon fa fa-envelope"></span><span class="text">info@licoresnarino.com</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget">
+            <h2 class="ftco-heading-2">Boletín</h2>
+            <form action="#" class="subscribe-form">
+              <div class="form-group">
+                <input type="text" class="form-control mb-2 text-center" placeholder="Ingrese su email">
+                <input type="submit" value="Suscribirse" class="form-control submit px-3">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">Licores Nariño</h2>
-              <p>Nos especializamos en licores artesanales únicos, elaborados con los mejores ingredientes locales.</p>
-              <ul class="ftco-footer-social list-unstyled">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget ml-md-4">
-              <h2 class="ftco-heading-2">Menú</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Inicio</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Acerca de</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Productos</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contacto</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">¿Alguna Pregunta?</h2>
-              <div class="block-23">
-                <ul>
-                  <li><span class="icon fa fa-map-marker"></span><span class="text">Calle 123, Ciudad, País</span></li>
-                  <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+57 123 456 7890</span></a></li>
-                  <li><a href="#"><span class="icon fa fa-envelope"></span><span class="text">info@licoresnarino.com</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget">
-              <h2 class="ftco-heading-2">Boletín</h2>
-              <form action="#" class="subscribe-form">
-               
+
+</body>
+</html>

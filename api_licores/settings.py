@@ -25,7 +25,7 @@ SECRET_KEY = 'ByronM@11m@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'licoresnarino.azurewebsites.net', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'electivalicores.azurewebsites.net', 'localhost']
 #DATABASES = {
    # 'default': {
         #ENGINE': 'django.db.backends.postgresql',
