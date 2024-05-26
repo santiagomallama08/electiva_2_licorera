@@ -1,0 +1,231 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Spectral', serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff3d31;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Header */
+.wrap {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ff6f61;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ff6f61;
+}
+
+.btn-cart {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.btn-cart:hover {
+  background-color: #ff3d31;
+}
+
+.hero-wrap {
+  background-image: url('https://images.unsplash.com/photo-1557682262-52e4e6dd41e0');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+}
+
+.hero-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-wrap .text {
+  z-index: 10;
+  position: relative;
+  color: #fff;
+}
+
+.hero-wrap h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-wrap p a {
+  margin: 5px;
+}
+
+/* Intro Section */
+.ftco-intro {
+  padding: 50px 0;
+}
+
+.ftco-intro .intro {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ftco-intro .icon {
+  font-size: 2rem;
+  color: #ff6f61;
+  margin-right: 15px;
+}
+
+/* Product Section */
+.ftco-section .product {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.ftco-section .product .img-prod {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.ftco-section .product .img-prod img {
+  transition: all 0.3s ease-in-out;
+}
+
+.ftco-section .product .img-prod:hover img {
+  transform: scale(1.1);
+}
+
+.ftco-section .product .status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff6f61;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+
+.ftco-section .product .text {
+  padding: 20px;
+  text-align: center;
+}
+
+.ftco-section .product .pricing {
+  margin-bottom: 15px;
+}
+
+.ftco-section .product .price {
+  font-size: 1.2rem;
+  color: #ff6f61;
+}
+
+.ftco-section .product .price .price-sale {
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.ftco-section .product .bottom-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ftco-section .product .bottom-area .add-to-cart {
+  background: #ff6f61;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+
+.ftco-section .product .bottom-area .add-to-cart:hover {
+  background: #ff3d31;
+}
+
+/* Footer */
+.ftco-footer {
+  background: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.ftco-footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.ftco-footer .ftco-footer-widget {
+  margin-bottom: 30px;
+}
+
+.ftco-footer .list-unstyled a {
+  color: #fff;
+}
+
+.ftco-footer .list-unstyled a:hover {
+  color: #ff6f61;
+}
+
+.ftco-footer .block-23 ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ftco-footer .block-23 ul li span {
+  margin-right: 10px;
+}
+
+.ftco-footer .block-23 ul li a {
+  color: #fff;
+}
+
+.ftco-footer .block-23 ul li a:hover {
+  color: #ff6f61;
+}
+
+.ftco-footer p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
